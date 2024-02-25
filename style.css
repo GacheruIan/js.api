@@ -90,9 +90,15 @@ a{
   
 }
 @media (max-width:1000px) {
-    .footer-inner #one, h2{
-        margin: 0rem -15%;
+    .footer-inner #one{
+        text-align: center;
         
+    }
+    #one {
+        display: block; /* Ensures #one is treated as a block-level element */
+        margin: 0 auto; /* Centers the block itself, if necessary */
+        width: fit-content; /* Makes the width of the element fit its content */
+        text-align: center; /* Ensures the content inside the h2 is centered */
     }
     .footer-inner #two{
        display: none !important;
@@ -123,7 +129,7 @@ a{
     }
     
 }
-/* @media (max-width:500px) {
+@media (max-width:500px) {
 nav{
     padding: 0 20px;
 }
@@ -139,4 +145,4 @@ nav{
 }
 
 
-} */
+}
