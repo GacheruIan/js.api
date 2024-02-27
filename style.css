@@ -11,10 +11,18 @@ body{
 /* global */
 
 .obj-width {
-    max-width: 1000px;
+    max-width: 900px;
     margin: auto;
 }
-
+.logo{
+    margin-left: 1%;
+}
+#one{
+    margin-left: 4%;
+}
+.search-container{
+    margin-right:1.2%;
+}
 nav {
     background-color: #2d4c50;
     box-shadow: 0 7px 10px black;
@@ -40,6 +48,11 @@ nav {
     border-radius: 5px;
     color: #333;
 }
+#search-button:hover{
+    transform: scale(1.1);
+
+}
+
 #search-button{
     padding: 10px 20px;/*top-bottom & left-right*/
     background-color: #138865;
@@ -64,6 +77,11 @@ nav {
     cursor: pointer;
     padding: 1rem;
     margin: 10px;
+
+}
+.blog-card:hover{
+  transform: scale(0.9);
+
 }
 a{
     color: white !important;
@@ -89,10 +107,17 @@ a{
     padding: 0.3rem;
   
 }
-@media (max-width:1000px) {
+.footer{
+    background-color: #2d4c50;
+    color:white;
+}
+@media (max-width:960px) {
     .footer-inner #one{
         text-align: center;
-        
+    }
+    .footer{
+        background-color: rgb(45, 5, 45);
+
     }
     #one {
         display: block; /* Ensures #one is treated as a block-level element */
@@ -106,6 +131,8 @@ a{
     }
     #search-button{
         margin-left: -0%;
+        background-color:rgb(99, 54, 99);
+
     }
     p{
         color:white;
@@ -116,6 +143,7 @@ a{
     }
     nav{
         padding: 0 20px;
+        background-color: rgb(45, 5, 45);
     }
     .navbar .logo{
         font-size: 1.8rem;
