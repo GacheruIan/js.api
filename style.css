@@ -17,9 +17,7 @@ body{
 .logo{
     margin-left: 1%;
 }
-#one{
-    margin-left:-7%;
-}
+
 .search-container{
     margin-right:3%;
 }
@@ -110,6 +108,11 @@ a{
 .footer{
     background-color: #2d4c50;
     color:white;
+}
+@media (min-width:960px) {
+    #one{
+        text-align: center;
+    }
 }
 @media (max-width:960px) {
     .footer-inner #one{
