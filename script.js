@@ -51,10 +51,10 @@ function display(articles){
         img.src = article.urlToImage;
         img.alt = article.title;
         const title = document.createElement("h2");
-        const trunc = article.title.length > 30?article.title.slice(0, 50)+"....":article.title.title;
+        const trunc = article.title.length > 50 ? article.title.slice(0, 50) + "...." : article.title;
         title.textContent = trunc
         const desc = document.createElement("p");
-        const truncx = article.description.length > 30?article.description.slice(0, 100)+"....":article.description.description;
+        const truncx = article.description.length > 30?article.description.slice(0, 100) + "....":article.description.description;
         desc.textContent = truncx;
 
         blogCard.appendChild(img);
